@@ -1,0 +1,249 @@
+/* body {
+  border-style: solid;
+  border-color: white;
+  border-width:10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+} */
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #eee;
+  border-bottom: 3px solid #2f364020;
+  /* padding: 20px 10px; */
+}
+
+/* Style the header links */
+.header a {
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-family: impact;
+  font-size: 18px; 
+  line-height: 60px;
+  border-radius: 4px;
+  
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header img.logo {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+
+ #movies { 
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  max-height: 1885px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+  border-left-width: 25px;
+  border-right-width: 25px;
+}
+
+.movie-img-container{
+  width: 500px;
+  
+
+}
+
+img { 
+  width: 99%;
+}
+
+#query {
+  text-align: center;
+  margin-bottom: 20px;
+
+
+}
+select, button, input { 
+  width: 100px;
+}
+
+footer{
+  border-top: 3px solid #2f364020;
+  background-color: #eee;
+  padding: 10px;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* #footerMaster {
+  display: flex; justify-content:space-around;
+
+} */
+
+/* footer .githubLink img{
+  cursor: pointer;
+  margin-left: 40%;
+  max-width: 30%;
+}
+
+footer .coco img{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+
+footer .credits img{
+  margin-top: 10%;
+  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.column {
+  float: right;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
+
+  /* Flex */
+  input {
+    width: auto;
+  }
+
+
+  #genre {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align:middle;
+    margin: 0 auto;
+
+}
+
+#year{
+  background-color:white;
+  color: black;
+  padding: 2px;
+  font-size: 16px;
+  margin: 0 auto;
+  vertical-align:middle;
+  border-radius: 4px;
+
+}
+
+#certification {
+  background-color: white;
+  color: black;
+  padding: 2px;
+  font-size: 16px;
+  width: 18%;
+  margin: 0 auto;
+  justify-content: center;
+  display:inline-block;
+  vertical-align:middle;	
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+
+}
+
+#button {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-family: impact;
+  font-size: 18px; 
+  line-height: 20px;
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.checkbox-container {
+  margin-right: 10%;
+  cursor: pointer;
+
+}
+
+#query {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-center {
+    float: none;
+  }
+  .column {
+    width: 80%;
+  }
+  
+#certification {
+  width: 80%;
+}
+
+.header img.logo {
+  width: 80%;
+}
+}
