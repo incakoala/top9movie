@@ -1,3 +1,12 @@
+# About
+
+Top9 Movie is a movie directory project I created using the base code from First Step Coding, using API from https://themoviedb.org/. The website contains basic functionality as outlined below, plus additional search functions and styling by me.
+
+Some special features include an image carousel by Slick.
+
+The documentation below this point is provided by First Step Coding.
+
+
 # Top9 Movie Loader
 
 Top9 is an application that loads cover images for the top 9 movies matching search criteria provided by the user. 
@@ -54,15 +63,3 @@ To save you the trouble, here's a list of *Genre* ids you can use in your select
 * History = 36
 * Horror = 27
 * Music = 10402
-
-# Extended Functionality
-
-This is the creative part of the project. Once you have the basic functionality working, it's up to you were you a take it! 
-
-Here are a few ideas to get started:
-
-* Customize the look and feel of the application with your own CSS.
-* Add a custom footer below the grid.
-* Add additional search criteria above the grid. Work them into your API requests.
-* Automatically updates to the movie list whenever the user changes a value, so you don't need to use the "Go!" button.
-* Add checkboxes for ratings: G, PG, PG-13, and R. Use client-side filtering to only display movies in the top 9 that have a rating matching one of the current selections. Automatically update the application whenever the user checks or unchecks a rating. (Hint: you may want to cache the data client-side to make this easier. You can do this by simply storing the API results in a global variable)
