@@ -148,7 +148,7 @@ function afterDataLoaded(data){
    if(data && data.results[i] && data.results[i].poster_path ){
    element.attr('src', posterBaseUrl + data.results[i].poster_path);
    } else {
-    element.attr('src', '/Users/Hilary/Documents/CodeProjects/Homework/top9-begin/film-poster-placeholder.png');
+    element.attr('src', 'film-poster-placeholder.png');
    }
 
   }
