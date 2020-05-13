@@ -8,6 +8,7 @@ Top9 Movie is a movie directory project I created using the base code from First
 Javascript, HTML, CSS, JQuery, TheMovieDB API, [Slick](https://github.com/kenwheeler/slick).
 
 Preview:
+
 ![image](https://i.ibb.co/xsVxLzk/github-io.jpg)
 
 The documentation below this point is provided by First Step Coding.  
