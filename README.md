@@ -1,12 +1,15 @@
-# https://incakoala.github.io/top9movie/
-
+Demo: https://incakoala.github.io/top9movie/
 
 
 # About
 
 Top9 Movie is a movie directory project I created using the base code from First Step Coding, using API from https://themoviedb.org/. The website contains basic functionality as outlined below, plus additional search functions and styling by me.
 
-Some special features include an image carousel by Slick.
+Javascript, HTML, CSS, JQuery, TheMovieDB API, [Slick](https://github.com/kenwheeler/slick).
+
+Preview:
+
+![image](https://i.ibb.co/xsVxLzk/github-io.jpg)
 
 The documentation below this point is provided by First Step Coding.  
 
