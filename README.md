@@ -9,7 +9,7 @@ Javascript, HTML, CSS, JQuery, TheMovieDB API, [Slick](https://github.com/kenwhe
 
 Preview:
 
-![image](https://i.ibb.co/xsVxLzk/github-io.jpg)
+![image](https://res.cloudinary.com/devjzx2qq/image/upload/v1620365200/screencapture-top9movie-incakoaloa-netlify-app-2021-05-06-22_26_26_livh1k.png)
 
 The documentation below this point is provided by First Step Coding.  
 
