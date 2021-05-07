@@ -1,4 +1,4 @@
-Demo: https://top9movie-incakoaloa.netlify.app/
+Demo: https://incakoala.github.io/top9movie/
 
 
 # About
