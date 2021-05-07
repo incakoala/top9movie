@@ -17,8 +17,8 @@ $(function () {
       dots: true,
       infinite: false,
       speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 5,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       responsive: [
         {
           breakpoint: 1024,
@@ -45,7 +45,7 @@ $(function () {
         }
       ]
     });
-  })
+  });
 })
 
 
@@ -143,7 +143,7 @@ function afterDataLoaded(data){
     - Look up a corresponding img element (in order)
     - Set the img element's src tag to posterBaseUrl + the poster_path from the result movie
    */
-  for(var i= 0; i < 9; i++){
+  for(var i= 0; i < 10; i++){
    var element = $(`#movieImg${i}`);
    if(data && data.results[i] && data.results[i].poster_path ){
    element.attr('src', posterBaseUrl + data.results[i].poster_path);

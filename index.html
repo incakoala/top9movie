@@ -4,15 +4,12 @@
 
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
   <title>Top 9 Movies</title>
   <link rel="stylesheet" href="styles.css?v=1.0">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
@@ -20,79 +17,69 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-
-
 </head>
 
 <body>
-
   <div class="header">
     <img class="logo" src="banner.png">
-    <div align="center">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
+  </div>
+
+  <div id="query" style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- Genre Source: https://developers.themoviedb.org/3/genres/get-movie-list -->
+
+    <div class="genre-wrapper">
+      <select id="genre">
+        <option value="">Genre</option>
+        <option value="28">Action</option>
+        <option value="12">Adventure</option>
+        <option value="16">Animation</option>
+        <option value="35">Comedy</option>
+        <option value="80">Crime</option>
+        <option value="99">Documentary</option>
+        <option value="18">Drama</option>
+        <option value="10751">Family</option>
+        <option value="14">Fantasy</option>
+        <option value="36">History</option>
+        <option value="27">Horror</option>
+        <option value="10402">Music</option>
+      </select>
+    </div>
+
+    <div class="year-wrapper">
+      <input type="text" id="year" placeholder="Year (e.g. 2014)">
+      <div id="year-error"></div>
+    </div>
+
+
+    <div class="certification-container">
+      <label class="checkbox-container">
+        <input type="checkbox" id="G">G
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="PG">PG
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="PG-13">PG-13
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="R">R
+      </label>
     </div>
   </div>
 
-  <br>
-
-  <div id="query" style="font-family:impact; color: red; font-size: 150%;">
-    <!-- Genre Source: https://developers.themoviedb.org/3/genres/get-movie-list -->
-    Genre
-    <select id="genre">
-      <option value="">Select</option>
-      <option value="28">Action</option>
-      <option value="12">Adventure</option>
-      <option value="16">Animation</option>
-      <option value="35">Comedy</option>
-      <option value="80">Crime</option>
-      <option value="99">Documentary</option>
-      <option value="18">Drama</option>
-      <option value="10751">Family</option>
-      <option value="14">Fantasy</option>
-      <option value="36">History</option>
-      <option value="27">Horror</option>
-      <option value="10402">Music</option>
-    </select>
-
-    <div>Year Released <input type="text" id="year" placeholder="e.g. 2014"></div>
-    <div id="year-error"></div>
-    <!-- Title: <input type="text" id="titleActorDirector" placeholder="Title/Actor/Director">
-                      <span id="questionMark"><i class="material-icons">info</i></span>  -->
-
-    <span class="certification-container">
-      Ratings
-      <div id="certification">
-        <label class="checkbox-container">
-          <input type="checkbox" id="G">G
-        </label>
-
-        <label class="checkbox-container">
-          <input type="checkbox" id="PG">PG
-        </label>
-
-        <label class="checkbox-container">
-          <input type="checkbox" id="PG-13">PG-13
-        </label>
-
-        <label class="checkbox-container">
-          <input type="checkbox" id="R">R
-        </label>
-      </div>
-    </span>
+  <div class="clear-button-wrapper">
+    <button type="button" id="button">Clear</button>
   </div>
-
-  <br>
-  <button type="button" id="button">Clear</button>
-  <br>
 
 
   <!--Posters-->
-  </div>
   <div id="movies">
     <div class="movie-img-container"><img id="movieImg0" src="film-poster-placeholder.png" /></div>
     <div class="movie-img-container"><img id="movieImg1" src="film-poster-placeholder.png" /></div>
@@ -109,22 +96,23 @@
 
 
 <footer>
-
   <div class="row">
-      <div class="column">
-          <a href="https://themoviedb.org" target="somethingUnique"><img src="tmdb2.svg"
-            style ="width: 60%;" alt="TMDB - The movie database."></a>      
-          </div>
     <div class="column">
-    <a href="https://movies.disney.com/coco" target="somethingUnique"><img src="coco.png"
-      style ="width: 80%;" alt="Miguelito"></a>
-      </div>
-      <div class="column">
-          <a href="https://github.com/incakoala/top9movie" target="somethingUnique"><img src="github.svg"
-            style ="width: 30%;" alt="GitHub"></a>      
-          </div>
+      <a href="https://themoviedb.org" target="somethingUnique">
+        <img src="tmdb2.svg" style="width: 60%; height: 50px;" alt="TMDB - The movie database.">
+      </a>
     </div>
 
+    <div class="column">
+      <a href="https://movies.disney.com/coco" target="somethingUnique"><img src="coco.svg"
+          style="width: 80%; height: 130px;" alt="Miguelito"></a>
+    </div>
+
+    <div class="column">
+      <a href="https://github.com/incakoala/top9movie" target="somethingUnique"><img src="github.svg"
+          style="width: 30%; height: 50px;" alt="GitHub"></a>
+    </div>
+  </div>
 </footer>
 
 </html>
