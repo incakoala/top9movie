@@ -43,10 +43,6 @@ img {
   padding-top: 20px;
 }
 
-select, button, input { 
-  width: 100px;
-}
-
 footer{
   border-top: 3px solid #2f364020;
   background-color: #eee;
@@ -57,7 +53,7 @@ footer{
 .column {
   float: right;
   width: 30%;
-  padding: 5px;
+  padding-top: 10px;
 }
 
 /* Clearfix (clear floats) */
@@ -113,8 +109,9 @@ footer{
   padding-bottom: 10px;
 }
 
-#button {
+#clear-button {
   color: black;
+  background: #eee!important;
   padding: 10px;
   text-decoration: none;
   font-size: 18px; 
@@ -127,13 +124,13 @@ footer{
   border-radius: 5px;
 }
 
-.checkbox-container {
-  margin-right: 1%;
-  cursor: pointer;
+button {
+  background: none!important;
 }
 
-.checkbox {
-  border:1px solid #cccccc;
+.radio-container {
+  margin-right: 1%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
